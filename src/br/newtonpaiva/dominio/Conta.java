@@ -1,9 +1,10 @@
 package br.newtonpaiva.dominio;
 
+
 public class Conta
 {
     private Integer numero;
-    private Double saldo;
+    protected Double saldo;
 
     public Double sacar(Double valor)
     {
@@ -17,6 +18,7 @@ public class Conta
         saldo += valor;
         return saldo;
     }
+
 
     public Integer getNumero()
     {
